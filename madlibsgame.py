@@ -18,16 +18,22 @@ def choose_game():
         print("""(1) Madlib Game 1
 (2) Madlib Game 2
 (0) Exit""")
+        # Input for the Gameoption choices
         game_choice = input("Which Option do you wanna choose: ")
-
+        
+        
+        # Entering Madlib Game 1 
         if game_choice == "1":
             madlib1()
+        # Entering Madlib Game 2
         if game_choice == "2":
             madlib2()
+        # Option to exit the Pgm
         if game_choice == "0":
+            # Function to end the Game
             sys.exit()
 
-
+# Game 1 as function with normal String concatenation
 def madlib1():
     farbe = input("Geben Sie eine Farbe ein: ")
     tier = input("Geben Sie eine Tier ein: ")
@@ -41,7 +47,7 @@ def madlib1():
     print("Wo es auch ein Café" + cafe + "gab")
     print("All dies ist passiert in der Stadt: " + stadt)
 
-
+# Game 2 as function with format.
 def madlib2():
     farbe = input("Geben Sie eine Farbe ein: ")
     tier = input("Geben Sie eine Tier ein: ")
@@ -55,6 +61,6 @@ def madlib2():
     print(f"Wo es auch ein Café {cafe} gab")
     print(f"All dies ist passiert in der Stadt: {stadt}")
 
-
+# Starting the Game ( Calling the Main function)
 if __name__ == '__main__':
     choose_game()
