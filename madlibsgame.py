@@ -26,12 +26,15 @@ def choose_game():
         if game_choice == "1":
             madlib1()
         # Entering Madlib Game 2
-        if game_choice == "2":
+        elif game_choice == "2":
             madlib2()
         # Option to exit the Pgm
-        if game_choice == "0":
+        elif game_choice == "0":
             # Function to end the Game
             sys.exit()
+        else:
+            print ("Falsche Eingabe")
+            continue
 
 # Game 1 as function with normal String concatenation
 def madlib1():
