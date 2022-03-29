@@ -32,32 +32,33 @@ def choose_game():
         elif game_choice == "0":
             # Function to end the Game
             sys.exit()
+        # Catching wrong User inputs    
         else:
-            print ("Falsche Eingabe")
+            print ("Wrong Input")
             continue
 
 # Game 1 as function with normal String concatenation
 def madlib1():
-    farbe = input("Geben Sie eine Farbe ein: ")
-    tier = input("Geben Sie eine Tier ein: ")
-    haus_nr = input("Geben Sie eine Haus ein: ")
-    see = input("Geben Sie eine See ein: ")
-    cafe = input("Geben Sie eine Café ein: ")
-    stadt = input("Geben Sie eine Stadt ein: ")
+    color = input("Please insert a Color: ")
+    animal = input("Name a Animal: ")
+    house_nr = input("Please insert a House Number: ")
+    lake = input("Please insert a lake: ")
+    cafe = input("Please insert a Caféteria Name: ")
+    city = input("Please insert your favorite City: ")
 
-    print("Eines tages war da ein" + tier + " wessen farbe " + farbe + "war.")
-    print("Es stand vor der Hausnummer " + haus_nr + " das am  " + see + "stand.")
+    print("One day there was a " + animal + " which was " + color)
+    print("It was right in front of the House with the Number: " + house_nr + " which was located near the Lake:  " + lake)
     print("Wo es auch ein Café" + cafe + "gab")
     print("All dies ist passiert in der Stadt: " + stadt)
 
 # Game 2 as function with format.
 def madlib2():
-    farbe = input("Geben Sie eine Farbe ein: ")
-    tier = input("Geben Sie eine Tier ein: ")
-    haus_nr = input("Geben Sie eine Haus ein: ")
-    see = input("Geben Sie eine See ein: ")
-    cafe = input("Geben Sie eine Café ein: ")
-    stadt = input("Geben Sie eine Stadt ein: ")
+    color = input("Please insert a Color: ")
+    animal = input("Name a Animal: ")
+    house_nr = input("Please insert a House Number: ")
+    lake = input("Please insert a lake: ")
+    cafe = input("Please insert a Caféteria Name: ")
+    city = input("Please insert your favorite City: ")
 
     print(f"Eines tages war da ein  {tier}  wessen farbe {farbe}  war.")
     print(f"Es stand vor der Hausnummer {haus_nr} das am {see} stand.")
